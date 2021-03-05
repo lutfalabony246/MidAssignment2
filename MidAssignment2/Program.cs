@@ -27,6 +27,7 @@ namespace MidAssignment2
 			int num2;
 			int num;
 			int num1;
+			int num3;
 	
 			//Console.WriteLine("Bank Limit ");
 			//num = Convert.ToInt32(Console.ReadLine());
@@ -36,12 +37,12 @@ namespace MidAssignment2
 			{
 				Console.WriteLine("1) Open a bank account \n2) Perform transiction for an account\n3) exit the application");
 				int choice = Convert.ToInt32(Console.ReadLine());
-				switch(choice)
+				switch (choice)
 				{
 					case 1:
 						Console.WriteLine("Open a bank account \n1)Savings Account\n2)Checking Account\n3)Quit");
 						int choice1 = Convert.ToInt32(Console.ReadLine());
-						switch(choice1)
+						switch (choice1)
 						{
 							case 1:
 								Console.WriteLine("******SAVINGS ACCOUNT******* ");
@@ -52,7 +53,7 @@ namespace MidAssignment2
 									Console.WriteLine("\nAccount " + (i + 1));
 									Console.WriteLine("Name: ");
 									string name = Console.ReadLine();
-									Console.WriteLine("Name: ");
+									Console.WriteLine("Date Of Birth: ");
 									string dateofbirth = Console.ReadLine();
 									Console.WriteLine("House no: ");
 									int houseNo = Convert.ToInt32(Console.ReadLine());
@@ -64,10 +65,10 @@ namespace MidAssignment2
 									string country = Console.ReadLine();
 									Console.WriteLine("Ammount: ");
 									double ammount = Convert.ToInt32(Console.ReadLine());
-									ourBank.AddAccount1(new Account(name, dateofbirth, new Address(houseNo, roadNo, city, country),ammount, AccountNumberGen1(i)));
+									ourBank.AddAccount1(new Account(name, dateofbirth, new Address(houseNo, roadNo, city, country), ammount, AccountNumberGen1(i)));
 									ourBank.PrintAllAccounts();
 								}
-									break;
+								break;
 
 							case 2:
 								Console.WriteLine("******CHECKING ACCOUNT******* ");
@@ -75,10 +76,9 @@ namespace MidAssignment2
 								num2 = Convert.ToInt32(Console.ReadLine());
 								for (int i = 0; i < num2; i++)
 								{
-									Console.WriteLine("\nAccount " + (i + 1));
 									Console.WriteLine("Name: ");
 									string name = Console.ReadLine();
-									Console.WriteLine("Name: ");
+									Console.WriteLine("Date Of Birth: ");
 									string dateofbirth = Console.ReadLine();
 									Console.WriteLine("House no: ");
 									int houseNo = Convert.ToInt32(Console.ReadLine());
@@ -96,15 +96,52 @@ namespace MidAssignment2
 								break;
 							case 3:
 								break;
+							default:
+								continue;
 
 						}
 						break;
 					case 2:
-						Console.WriteLine("Open a bank account \n1)Savings Account\n2)Checking Account\nQuit");
+						Console.WriteLine("Open a bank account \n1)Deposit\n2)Withdraw\n3)Transfer\n4)Show\n5)Quit");
 						int choice2 = Convert.ToInt32(Console.ReadLine());
+						switch(choice2)
+						{
+							case 1:
+								/*Console.WriteLine("How much amount you want to deposit?");
+								double ammount = Convert.ToInt32(Console.ReadLine());
+								//4Account acc = new Account();
+								num3 = Convert.ToInt32(Console.ReadLine());
+								for (int i = 0; i < num3; i++)
+								{
+									ourBank.Deposite(ammount);
+								}
+
+									/*for (int i = 0; i < ourBank.)
+								{
+									myBank[i].Deposite(10);
+
+								}*/
+
+								//ourBank.Yy(500.00);
+								//Account acc = new Account();
+								//acc.Deposite(100);
 
 
+								break;
+								
+
+
+
+
+								
+
+
+						}
+						
 						break;
+
+				
+
 					case 3:
 						flag = false;
 							break;

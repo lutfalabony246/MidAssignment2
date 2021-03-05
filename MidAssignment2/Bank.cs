@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace MidAssignment2
 {
-	class Bank
-	{
+    class Bank
+    {
         private string bankName;
         private static Account[] myBank;
         public static int size;
 
-        public Bank(string bankName, int size=5)
+        public Bank(string bankName, int size = 5)
         {
             Bank.size = size;
             this.bankName = bankName;
@@ -25,7 +25,7 @@ namespace MidAssignment2
             get { return this.bankName; }
         }
 
-        public Account[] MyBank
+        /*public Account[] MyBank
         {
             get
             {
@@ -35,8 +35,8 @@ namespace MidAssignment2
             {
                 myBank = value;
             }
-        }
-        public Account[] Accounts
+        }*/
+        public Account[] MyBank
         {
             set { Bank.myBank = value; }
             get { return Bank.myBank; }
@@ -84,14 +84,24 @@ namespace MidAssignment2
             for (int i = 0; i < myBank.Length; i++)
             {
                 // int remainbalance=0;
-                if (myBank[i] == null )
+                if (myBank[i] == null)
                 {
                     myBank[i] = account;
                     break;
                 }
-               
+
             }
         }
-
+        /*public void Yy(double amount)
+        {
+            Console.WriteLine("-----------------" + BankName + "-----------------");
+            for (int i = 0; i < myBank.Length; i++)
+            {
+                
+                myBank[i].Deposite(amount);
+            }
+            Console.WriteLine("-----------------" + "######" + "-----------------");
+        }*/
     }
 }
+
