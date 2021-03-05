@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace MidAssignment2
 {
-	class Program
+	class Account
 	{
-		static void Main(string[] args)
-		{
-
-		}
 	}
 }
