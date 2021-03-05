@@ -13,12 +13,12 @@ namespace MidAssignment2
 		private string dateOfBirth;
 		private double balance;
 		private Address address;
-		public Account(string accountName, string dateOfBirth, Address addres, double balance, int accountnmbrincrement)
+		public Account(string accountName, string dateOfBirth, Address addres, double balance, int acn)
 		{
 			this.accountName = accountName;
 			this.balance = balance;
 			this.address = addres;
-			this.accountNumber = accountnmbrincrement;
+			this.accountNumber = acn;
 		}
 		public string AccountName
 		{
