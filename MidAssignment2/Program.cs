@@ -123,33 +123,41 @@ namespace MidAssignment2
 								}*/
 
 								//ourBank.Yy(500.00);
-								//Account acc = new Account();
-								//acc.Deposite(100);
-
-
+								Console.WriteLine("Please enter  the amount");
+								double ammount1 = Convert.ToInt32(Console.ReadLine());
+								Account acc = new Account();
+								acc.Deposite(ammount1);
 								break;
+							case 2:
+								Console.WriteLine("Please enter  the amount");
+								double ammount2 = Convert.ToInt32(Console.ReadLine());
+								Account acc1 = new Account();
+								acc1.Withdraw(ammount2);
+								break;
+							case 3:
+								Console.WriteLine("Please enter  the account number of receiver");
+								Console.WriteLine("Please enter  the amount");
+								Account acc2 = new Account();
+								//acc2.Transfer(1111, 2222);
+								break;
+							case 4:
+								Account acc3 = new Account();
+								acc3.Show();
+								break;
+							case 5:
 								
-
-
-
-
-								
-
-
+								break;
+							default:
+								continue;
 						}
-						
+
 						break;
-
-				
-
 					case 3:
+
 						flag = false;
 							break;
 					default:
 						continue;
-
-						
-
 				}
 
 			}
