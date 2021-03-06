@@ -52,7 +52,7 @@ namespace MidAssignment2
                 }
                 myBank[i].PrintAccount();
             }
-            Console.WriteLine("-----------------" + "######" + "-----------------");
+            Console.WriteLine("-----------------" +"CONGRATULATIONS!!!\n Welcome To DEVELOPERS BANK "+ "-----------------");
         }
 
 
@@ -102,6 +102,17 @@ namespace MidAssignment2
             }
             Console.WriteLine("-----------------" + "######" + "-----------------");
         }*/
+        /*ublic void Transaction()
+		{
+            int count=0;
+            for (int i=0;i<myBank.Length;i++)
+			{
+
+			}
+            
+		}*/
+        
+
     }
 }
 

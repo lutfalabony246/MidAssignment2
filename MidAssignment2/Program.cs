@@ -25,12 +25,13 @@ namespace MidAssignment2
 
 			bool flag = true;
 			int num2;
-			int num;
+			//int num;
 			int num1;
-			int num3;
-	
+			//int num3;
+
 			//Console.WriteLine("Bank Limit ");
 			//num = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("******Welcome To Developer's Bank*******");
 			Bank ourBank = new Bank("Developer's bank", 5);
 
 			while (flag)
@@ -107,20 +108,6 @@ namespace MidAssignment2
 						switch(choice2)
 						{
 							case 1:
-								/*Console.WriteLine("How much amount you want to deposit?");
-								double ammount = Convert.ToInt32(Console.ReadLine());
-								//4Account acc = new Account();
-								num3 = Convert.ToInt32(Console.ReadLine());
-								for (int i = 0; i < num3; i++)
-								{
-									ourBank.Deposite(ammount);
-								}
-
-									/*for (int i = 0; i < ourBank.)
-								{
-									myBank[i].Deposite(10);
-
-								}*/
 
 								//ourBank.Yy(500.00);
 								Console.WriteLine("Please enter  the amount");
@@ -147,6 +134,13 @@ namespace MidAssignment2
 								//for(int i=0;i<=)
 								//==Account acc3 = new Account();
 								//,j.j,h/--yewqaF2 ;;
+								/*int count = 0;
+								for(int i=0;i<=count;i++)
+								{
+									Account acc4 = new Account();
+									acc4.Deposite();
+
+								}*/
 								break;
 							case 5:
 								
@@ -159,6 +153,7 @@ namespace MidAssignment2
 					case 3:
 
 						flag = false;
+						Console.WriteLine("***********Thank you for staying with us***********");
 							break;
 					default:
 						continue;

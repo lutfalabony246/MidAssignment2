@@ -17,6 +17,7 @@ namespace MidAssignment2
 		public Account()
 		{
 			//Console.WriteLine("parameterless");
+		
 		}
 		public Account(string accountName, string dateOfBirth, Address addres, double balance, int acn)
 		{
@@ -54,7 +55,7 @@ namespace MidAssignment2
 		{
 
 			this.balance = this.balance + amount;
-			Console.WriteLine("Depisited!!");
+			Console.WriteLine("Depisited!!\nCurrent Balance" + this.balance);
 
 
 		}
@@ -63,7 +64,7 @@ namespace MidAssignment2
 			if (this.balance >= amount)
 			{
 				this.balance = this.balance - amount;
-				Console.WriteLine("Withdaw Successful");
+				Console.WriteLine("Withdaw Successful\nCurrent Balance" + this.balance);
 			}
 			else
 			{
@@ -75,17 +76,18 @@ namespace MidAssignment2
 		}
 		public void Receiver( double amount1, [Optional] double recebalance)
 		{
-			this.balance = this.balance + amount1;
+			//this.balance = this.balance + amount1;
+			recebalance = recebalance + amount1;
 		}
 
 	
-		public void Transfer(int receiveraccount, double amount)
+		public void Transfer(int receiveraccount, double amountt2)
 		{
 
-			this.Receiver(amount);
-		
-			this.Withdraw(amount);
-			Console.WriteLine("Transfer Successfully Completed!!!!! \n your current balance is:" + this.balance);
+			this.Receiver(amountt2);
+
+			this.Withdraw(amountt2);
+			Console.WriteLine("Transfer Successfully Completed!!!!!");
 
 		}
 
@@ -102,7 +104,12 @@ namespace MidAssignment2
 			Console.WriteLine("\nAccount No:{0}\nAccount Name:{1}\nBalance:{2}", this.accountNumber, this.accountName, this.balance);
 			this.address.PrintAddress();
 		}
-
+		/*public void Transaction()
+		{
+			int count = 0;
+			for(int=0;int<=)
+		}
+		*/
 
 	}
 }
