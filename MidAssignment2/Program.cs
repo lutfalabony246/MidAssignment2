@@ -136,13 +136,17 @@ namespace MidAssignment2
 								break;
 							case 3:
 								Console.WriteLine("Please enter  the account number of receiver");
+								int receiveraccount = Convert.ToInt32(Console.ReadLine());
 								Console.WriteLine("Please enter  the amount");
+								double ammount3 = Convert.ToInt32(Console.ReadLine());
+								//Console.WriteLine("Please enter  the amount");
 								Account acc2 = new Account();
-								//acc2.Transfer(1111, 2222);
+								acc2.Transfer(receiveraccount, ammount3);
 								break;
 							case 4:
-								Account acc3 = new Account();
-								acc3.Show();
+								//for(int i=0;i<=)
+								//==Account acc3 = new Account();
+								//,j.j,h/--yewqaF2 ;;
 								break;
 							case 5:
 								

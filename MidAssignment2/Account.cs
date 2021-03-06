@@ -16,9 +16,9 @@ namespace MidAssignment2
 		private Address address;
 		public Account()
 		{
-			Console.WriteLine("parameterless");
+			//Console.WriteLine("parameterless");
 		}
-		public Account( string accountName, string dateOfBirth,  Address addres,double balance, int acn)
+		public Account(string accountName, string dateOfBirth, Address addres, double balance, int acn)
 		{
 			this.accountName = accountName;
 			this.balance = balance;
@@ -73,18 +73,26 @@ namespace MidAssignment2
 
 
 		}
-
-		//public void Transfer(Account receiver,double amount)
-		public void Transfer(Account receiver, double amount)
+		public void Receiver( double amount1, [Optional] double recebalance)
 		{
-			receiver.Deposite(amount);
+			this.balance = this.balance + amount1;
+		}
+
+	
+		public void Transfer(int receiveraccount, double amount)
+		{
+
+			this.Receiver(amount);
+		
 			this.Withdraw(amount);
-			Console.WriteLine("Transfer Successfully Completed");
+			Console.WriteLine("Transfer Successfully Completed!!!!! \n your current balance is:" + this.balance);
 
 		}
 
 		public void Show()
 		{
+			//if ()
+
 			Console.WriteLine("Balance"+ this.Balance);
 		}
 
